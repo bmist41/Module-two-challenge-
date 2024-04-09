@@ -63,7 +63,7 @@
     margin-top: auto;
   }
   
-  .products {
+  .portfolio {
     flex: 1;
     background-color: var(--white);
     padding: 50px;
@@ -72,7 +72,7 @@
     justify-content: space-evenly;
   }
   
-  .card {
+  .project {
     border-style: solid;
     border-width: 1px;
     border-radius: var(--border-radius);
@@ -80,20 +80,29 @@
     flex: 0 0 300px;
     box-shadow: 10px 10px 5px #aaaaaa;
     margin: 20px;
+    position: relative
   }
   
-  .card > header {
-    /* This is the same as `border-radius: 50px 50px 0 0 */
+  .project > header {
     border-radius: var(--border-radius) var(--border-radius) 0 0;
     padding: 20px;
   }
   
-  .card > p {
+  .project > p {
     text-align: center;
   }
-  
-  .card > img {
-    width: 100%;
+
+  .project > a img{
+    display: block;
+    max-width: 100%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/* Only applying to Cal logo because of image rendering */
+  .project a img:hover {
+    background-color: gray;
+    color: var(--dark-blue);
   }
   
   @media screen and (max-width: 768px) {
